@@ -1,0 +1,40 @@
+<div class="cadastro">
+  <mat-form-field>
+    <input matInput [(ngModel)]="lista.Firstname" placeholder="Nome">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="lista.Lastname" placeholder="Sobrenome">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="lista.Address" placeholder="Endereço">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="lista.State" placeholder="Estado">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="lista.City" placeholder="Cidade">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="lista.Cultures" placeholder="Cultura">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="lista.Phone" placeholder="Telefone">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="lista.Crea" placeholder="Crea">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="lista.Crea_State" placeholder="Estado Crea">
+  </mat-form-field>
+
+  <button type="button" (click)="add()">Cadastrar</button>
+  
+  <ul>
+    <li *ngFor="let item of dados">
+      {{item.Firstname}} - {{item.Lastname}} - {{item.Phone}} <br>
+      {{item.Address}} - {{item.State}} - {{item.City}} <br>
+      {{item.Cultures}} <br>
+      {{item.Crea}} - {{item.Crea_State}}
+    </li>
+  </ul>
+</div>

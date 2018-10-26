@@ -1,0 +1,17 @@
+button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 26, 7)
+}
+
+ul li{
+    padding: 5px;
+}
+
+div.cadastro{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+}
+div.cadastro > *{
+    width: 50%;
+}
